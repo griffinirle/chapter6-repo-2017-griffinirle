@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=
+comment0.target=EllipseComponent()
+comment1.params=g
+comment1.target=void\ paintComponent(java.awt.Graphics)
+comment1.text=\r\n\ \ \ \ public\ void\ setPos(int\ x,\ int\ y){\r\n\ \ \ \ \ \ \ \ this.x\=x;\r\n\ \ \ \ \ \ \ \ this.y\=y;\r\n\ \ \ \ }\r\n\ \ \ \ \r\n\ \ \ \ public\ void\ setSop(int\ w,\ int\ h){\r\n\ \ \ \ \ \ \ \ this.height\=h;\r\n\ \ \ \ \ \ \ \ this.width\=w;\r\n\ \ \ \ }\r\n
+numComments=2
