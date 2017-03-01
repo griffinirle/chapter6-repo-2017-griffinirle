@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Coin()
+comment0.text=-----------------------------------------------------------------\r\n\ \ Sets\ up\ the\ coin\ by\ flipping\ it\ initially.\r\n
+comment1.params=typee\ valuee
+comment1.target=Coin(char,\ double)
+comment2.params=
+comment2.target=char\ getType()
+comment2.text=\r\n\ Returns\ the\ type\r\n
+comment3.params=
+comment3.target=double\ getValue()
+comment3.text=\r\n\ Returns\ the\ value\r\n
+comment4.params=
+comment4.target=void\ flip()
+comment4.text=-----------------------------------------------------------------\r\n\ \ Flips\ the\ coin\ by\ randomly\ choosing\ a\ face\ value.\r\n
+comment5.params=
+comment5.target=boolean\ isHeads()
+comment5.text=-----------------------------------------------------------------\r\n\ \ Returns\ true\ if\ the\ current\ face\ of\ the\ coin\ is\ heads.\r\n\ \ \ \t\t@return\ boolean,\ true\ if\ heads\r\n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment6.text=-----------------------------------------------------------------\r\n\ \ Returns\ the\ current\ face\ of\ the\ coin\ as\ a\ string.\r\n\ \ \ \t\t@return\ String\r\n
+numComments=7
