@@ -1,40 +1,49 @@
+//Justin Borella and Griffin Irle
 
-
-/**
- * Write a description of class Quiztime here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+import Java.util.Scanner;
 public class Quiztime
 {
-    /** description of instance variable x (add comment for each instance variable) */
-    private int x;
 
-    /**
-     * Default constructor for objects of class Quiztime
-     */
+
+
     public Quiztime()
     {
-        // initialise instance variables
-        x = 0;
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     *    that describes the operation of the method
-     *
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *            (what the method guarantees upon completion)
-     * @param    y    description of parameter y
-     * @return    description of the return value
-     */
-    public int sampleMethod(int y)
+    public static void main( String[] args)
     {
-        // put your code here
-        return x+y;
+        Quiz The_Test = new Quiz();
+        Question question1 = new Question();
+        ArrayList <Question> quiz = new ArrayList<>();
+        System.out.println("Hey there, welcome to the test!");
+        System.out.println("How many questions you want?");
+        Scanner scan = new Scanner(System.in);
+        int answer = scan.nextInt();
+        System.out.println("Alright, here we go...");
+        quiz = The_Test.getQuestions(answer);
+        int length = quiz.length;
+        int count = 0;
+        int anscount = 0;
+        while(count < length)
+        {
+			System.out.println(quiz[count].getQuestion());
+			String newanswer = scan.next();
+			if (newanswer.equals(quiz[count].getAnswer()))
+			{
+				anscount++;
+				System.out.println("Correct");
+			}
+			else
+			{
+				System.out.println("Incorrect");
+			}
+			count++;
+		}
+		System.out.println("Here is your score:");
+		System.out.println(anscount + " answers right");
+
+
+
     }
 
 }
